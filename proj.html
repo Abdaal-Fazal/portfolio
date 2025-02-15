@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projects</title>
+    <link rel="icon" href="logo1.jpeg.jpg">
+    
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        
+        body {
+            background: url('prbg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 10%;
+            position: relative;
+        }
+
+       
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+
+        
+        #one h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFD700; /* Gold color */
+            margin-bottom: 30px;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        
+        .tit h2 {
+            font-size: 28px;
+            color: #00E676; /* Neon Green */
+            margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        
+        .mat {
+            width: 60%;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            margin: 15px auto;
+            transition: 0.4s;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .mat:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+        }
+
+        .mat p {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        
+        #two img {
+            width: 80%;
+            max-width: 450px;
+            border-radius: 10px;
+            border: 3px solid #00E676;
+            margin-top: 20px;
+            transition: 0.3s;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        #two img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 230, 118, 0.6);
+        }
+
+        
+        .three, .four {
+            margin-top: 20px;
+        }
+
+        video {
+            width: 80%;
+            max-width: 450px;
+            border-radius: 10px;
+            border: 2px solid #FFD700;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+            transition: 0.3s;
+        }
+
+        video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(255, 215, 0, 0.6);
+        }
+
+        
+        @media (max-width: 1024px) {
+            .mat {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 5%;
+            }
+
+            #one h1 {
+                font-size: 34px;
+            }
+
+            .tit h2 {
+                font-size: 24px;
+            }
+
+            .mat {
+                width: 90%;
+            }
+
+            .mat p {
+                font-size: 16px;
+            }
+        }
+
+       
+        @keyframes fadeInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+   
+    <div id="one">
+        <h1><u>PROJECTS</u></h1>
+    </div>
+
+   
+    <div class="tit">
+        <h2>Industrial Monitoring System</h2>
+    </div>
+    <div class="mat">
+        <p>Monitoring the Temperature and Humidity in industries using Temperature and Humidity Sensors.</p>
+    </div>
+
+   
+    <div class="tit">
+        <h2>Automatic Street Light Control</h2>
+    </div>
+    <div class="mat">
+        <p>Controlling street light operation using LDR and IR Sensors.</p>
+    </div>
+
+  
+    <div class="tit">
+        <h2>Quadcopter using Arduino</h2>
+    </div>
+    <div class="mat">
+        <p>Building a basic flying Quadcopter model using Arduino Microcontroller.</p>
+    </div>
+
+   
+    <div id="two">
+        <img src="image001.jpg" alt="Project Image">
+    </div>
+
+    
+    <div class="tit">
+        <h2>Emergency Kit Delivery & Surveillance using Quadcopter</h2>
+    </div>
+    <div class="mat">
+        <p>Delivering emergency kits to disaster-hit or inaccessible areas using drone surveillance.</p>
+    </div>
+
+   
+    <div class="three">
+        <video src="video001.mp4" controls></video>
+    </div>
+
+    <div class="four">
+        <video src="video002.mp4" controls></video>
+    </div>
+
+   
+    <div class="tit">
+        <h2>To-Do List Application</h2>
+    </div>
+    <div class="mat">
+        <p>
+            A web-based To-Do List app that allows users to add, edit, and delete tasks efficiently.  
+           
+            Developed using **HTML, CSS, JavaScript**.
+        </p>
+    </div>
+
+</body>
+</html>

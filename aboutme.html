@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <link rel="icon" href="logo1.jpeg.jpg">
+    
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        
+        body {
+            background: url('abtbg.jpg') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: -1;
+        }
+
+       
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid #2C2C2C; /* Dark Gray Border */
+            margin: 15px 0;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+        }
+
+        
+        h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        
+        h3 {
+            font-size: 24px;
+            color: #D4D4D4; /* Light Gray */
+            margin-top: 10px;
+            font-weight: bold;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+       
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 300;
+            padding: 10px 0;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+       
+        .contact-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 30px;
+            background: #1E3A8A; /* Dark Blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-btn:hover {
+            background-color: #0F172A; /* Even Darker Blue */
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+       
+        @keyframes fadeInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ABOUT ME</h1>
+
+       
+        <img src="photo2.jpg" alt="photo" class="profile-img">
+
+        
+        <h3>HELLO!</h3>
+        <p> 
+            I'm <b>MOHAMMED ABDAAL FAZAL</b> <br>
+            From Raichur, Karnataka <br>
+            Currently pursuing Full Stack Web Development <br>
+            at <i>TAP ACADEMY</i>, Bangalore, Karnataka
+        </p>
+
+       
+        <p>
+            A highly motivated and results-driven Full Stack Web Developer with a background in Electronics and Communication
+            Engineering. Equipped with hands-on experience in developing dynamic web applications, along with strong proficiency in
+            both front-end and back-end technologies. Proficient in problem-solving, collaboration, and time management, with a
+            solid understanding of corporate environments and soft skills that foster effective communication, teamwork, and
+            leadership.
+        </p>
+
+       
+        <a href="contact.html" class="contact-btn">Get in Touch</a>
+    </div>
+
+</body>
+</html>

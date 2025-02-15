@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link rel="icon" href="logo1.jpeg.jpg">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 10s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+      
+        .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            width: 500px; /* ✅ Wider Form */
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: left; /* ✅ Aligning labels properly */
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+       
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+       
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0 10px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        
+        button {
+            background: #ffcc00;
+            color: #121212;
+            padding: 14px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background: #ffaa00;
+            transform: scale(1.05);
+        }
+
+       
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-container a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-container a:hover {
+            transform: scale(1.2);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Contact Me</h1>
+
+    <script>
+        alert("Submit your details and leave a message for me!");
+    </script>
+
+  
+    <div class="form-container">
+        <legend><strong>Enter Details</strong></legend>
+
+        <label for="name">Name:</label>
+        <input required type="text" id="name" placeholder="Ex: Virat">
+
+        <label for="email">Email:</label>
+        <input required type="email" id="email" placeholder="virat@gmail.com">
+
+        <label for="phone">Phone No:</label>
+        <input required type="tel" id="phone" placeholder="97XXXXXXXX">
+
+        <label for="profession">Profession:</label>
+        <input required type="text" id="profession" placeholder="Ex: Engineer">
+
+        <label for="gender">Gender:</label>
+        <input required type="text" id="gender">
+
+        <label for="message">Leave a Message:</label>
+        <textarea id="message" cols="30" rows="5" placeholder="Type Here"></textarea>
+
+        <br>
+        <button type="submit">Submit</button>
+    </div>
+
+   
+    <div class="social-container">
+        <a href="https://instagram.com/mr_maf.17">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-abdaal-fazal-797a89253">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:abdaalfazal.maf@gmail.com">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="tel:9741864137">
+            <i class="fa fa-phone"></i>
+        </a>
+        <a href="https://github.com/Abdaal-Fazal/MAF.github.io">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+</body>
+</html>
